@@ -6,9 +6,7 @@
 <title>Anil Kumar Thiruveedhi — Full Stack .NET Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
-/* ═══════════════════════════════════════
-   THEME TOKENS
-═══════════════════════════════════════ */
+
 [data-theme="dark"] {
   --bg: #04070f;
   --bg2: #080d1a;
@@ -52,9 +50,7 @@
   --shadow: 0 20px 60px rgba(80,100,180,.12);
 }
 
-/* ═══════════════════════════════════════
-   RESET & BASE
-═══════════════════════════════════════ */
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;font-size:16px}
 body{
@@ -65,9 +61,7 @@ body{
   min-height:100vh;
 }
 
-/* ═══════════════════════════════════════
-   CUSTOM CURSOR
-═══════════════════════════════════════ */
+
 #cur{
   position:fixed;width:10px;height:10px;
   background:var(--cyan);border-radius:50%;
@@ -89,9 +83,7 @@ body{
 [data-theme="light"] #cur{background:var(--purple)}
 [data-theme="light"] #cur-ring{border-color:rgba(124,47,212,.4)}
 
-/* ═══════════════════════════════════════
-   LOADER
-═══════════════════════════════════════ */
+
 #loader{
   position:fixed;inset:0;background:var(--bg);
   display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -112,9 +104,7 @@ body{
   border-radius:99px;animation:ldfill 2.1s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes ldfill{to{width:100%}}
 
-/* ═══════════════════════════════════════
-   BACKGROUND — CANVAS + ORBS
-═══════════════════════════════════════ */
+
 #particles{position:fixed;inset:0;z-index:0;pointer-events:none}
 .orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .orb{position:absolute;border-radius:50%;filter:blur(100px);
@@ -130,9 +120,7 @@ body{
   100%{transform:translate(-25px,50px) scale(.94)}
 }
 
-/* ═══════════════════════════════════════
-   NAVBAR
-═══════════════════════════════════════ */
+
 nav{
   position:fixed;top:0;left:0;right:0;z-index:500;
   padding:1rem 5%;display:flex;align-items:center;justify-content:space-between;
@@ -216,9 +204,6 @@ nav.scrolled{border-color:var(--border)}
 }
 .mmenu a:hover{color:var(--cyan)}
 
-/* ═══════════════════════════════════════
-   MAIN / SECTIONS
-═══════════════════════════════════════ */
 main{position:relative;z-index:1}
 section{padding:7rem 8%}
 
@@ -239,14 +224,11 @@ section{padding:7rem 8%}
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
 }
 
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
 .reveal.on{opacity:1;transform:translateY(0)}
 .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.26s}.d4{transition-delay:.36s}
 
-/* ═══════════════════════════════════════
-   HERO
-═══════════════════════════════════════ */
+
 #hero{
   min-height:100vh;display:flex;align-items:center;
   padding-top:80px;position:relative;
@@ -269,7 +251,6 @@ section{padding:7rem 8%}
   50%{box-shadow:0 0 0 6px rgba(0,229,160,0)}
 }
 
-/* ── HERO NAME — big cinematic style ── */
 .hero-name{
   font-family:'Syne',sans-serif;
   font-size:clamp(3rem,10vw,7.5rem);
@@ -372,9 +353,6 @@ section{padding:7rem 8%}
 }
 .btn-o:hover{transform:translateY(-3px);box-shadow:var(--glow-c);border-color:var(--cyan);color:var(--cyan)}
 
-/* ═══════════════════════════════════════
-   ABOUT
-═══════════════════════════════════════ */
 .about-grid{
   display:grid;grid-template-columns:1fr 1.7fr;
   gap:4.5rem;align-items:start;margin-top:3rem;
@@ -429,9 +407,8 @@ section{padding:7rem 8%}
 }
 .fact-l{font-size:.8rem;color:var(--muted);margin-top:.15rem;font-family:'DM Mono',monospace}
 
-/* ═══════════════════════════════════════
-   TECH STACK — CATEGORIZED
-═══════════════════════════════════════ */
+   /* TECH STACK — CATEGORIZED */
+
 #tech{background:var(--bg2);transition:background .4s}
 .tech-category{margin-bottom:3rem}
 .tech-cat-label{
@@ -462,9 +439,7 @@ section{padding:7rem 8%}
   transition:width 1.2s cubic-bezier(.4,0,.2,1);
 }
 
-/* ═══════════════════════════════════════
-   PROJECTS
-═══════════════════════════════════════ */
+   /* PROJECTS */
 .filter-bar{display:flex;gap:.65rem;flex-wrap:wrap;margin:2rem 0 2.5rem}
 .fbt{
   padding:.44rem 1.1rem;border-radius:99px;
@@ -544,9 +519,7 @@ section{padding:7rem 8%}
 .m-desc{color:var(--text2);line-height:1.85;margin-bottom:1.5rem;font-size:.93rem}
 .m-links{display:flex;gap:.9rem;flex-wrap:wrap}
 
-/* ═══════════════════════════════════════
-   EXPERIENCE
-═══════════════════════════════════════ */
+   /* EXPERIENCE */
 .timeline{margin-top:3rem;position:relative}
 .timeline::before{
   content:'';position:absolute;left:20px;top:0;bottom:0;width:2px;
@@ -572,9 +545,7 @@ section{padding:7rem 8%}
 .t-co{font-size:.85rem;color:var(--purple);margin-bottom:.7rem;font-family:'DM Mono',monospace}
 .t-desc{font-size:.86rem;color:var(--text2);line-height:1.74}
 
-/* ═══════════════════════════════════════
-   CONTACT
-═══════════════════════════════════════ */
+   /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:4rem;margin-top:3rem;align-items:start}
 .ci-title{font-family:'Syne',sans-serif;font-size:1.45rem;font-weight:700;margin-bottom:.8rem}
 .ci-text{color:var(--text2);line-height:1.82;margin-bottom:1.8rem;font-size:.95rem}
@@ -727,7 +698,7 @@ footer{
 
 <main>
 
-<!-- ══════════ HERO ══════════ -->
+<!-- HERO  -->
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-badge">
@@ -778,7 +749,7 @@ footer{
   <div class="scroll-hint"><div class="scroll-mouse"></div>Scroll</div>
 </section>
 
-<!-- ══════════ ABOUT ══════════ -->
+<!--  ABOUT  -->
 <section id="about">
   <div class="reveal"><div class="stag">About Me</div></div>
   <h2 class="stitle reveal d1">Who I <span class="gtext">Am</span></h2>
@@ -818,14 +789,14 @@ footer{
   </div>
 </section>
 
-<!-- ══════════ TECH STACK ══════════ -->
+<!--  TECH STACK  -->
 <section id="tech">
   <div class="reveal"><div class="stag">Tech Stack</div></div>
   <h2 class="stitle reveal d1">My <span class="gtext">Toolkit</span></h2>
   <div id="techWrap"></div>
 </section>
 
-<!-- ══════════ PROJECTS ══════════ -->
+<!--  PROJECTS  -->
 <section id="projects">
   <div class="reveal"><div class="stag">Projects</div></div>
   <h2 class="stitle reveal d1">Featured <span class="gtext">Work</span></h2>
@@ -847,14 +818,14 @@ footer{
   </div>
 </div>
 
-<!-- ══════════ EXPERIENCE ══════════ -->
+<!--  EXPERIENCE  -->
 <section id="experience">
   <div class="reveal"><div class="stag">Experience</div></div>
   <h2 class="stitle reveal d1">My <span class="gtext">Journey</span></h2>
   <div class="timeline" id="tlWrap"></div>
 </section>
 
-<!-- ══════════ CONTACT ══════════ -->
+<!--  CONTACT  -->
 <section id="contact">
   <div class="reveal"><div class="stag">Contact</div></div>
   <h2 class="stitle reveal d1">Let's <span class="gtext">Connect</span></h2>
@@ -902,9 +873,7 @@ footer{
 </footer>
 
 <script>
-/* ═══════════════════════════════════════
-   DATA
-═══════════════════════════════════════ */
+   // DATA
 var TECH_CATEGORIES = [
   {
     label: 'Frontend',
@@ -996,9 +965,7 @@ var ROLES = [
   'Database Designer'
 ];
 
-/* ═══════════════════════════════════════
-   SCROLL REVEAL — DEFINED FIRST
-═══════════════════════════════════════ */
+   // SCROLL REVEAL — DEFINED FIRST
 var revealObserver = new IntersectionObserver(function(entries) {
   entries.forEach(function(en) {
     if (en.isIntersecting) {
@@ -1014,9 +981,7 @@ function observeAll() {
   }
 }
 
-/* ═══════════════════════════════════════
-   BUILD TECH STACK
-═══════════════════════════════════════ */
+   // BUILD TECH STACK
 var techWrap = document.getElementById('techWrap');
 
 for (var ci = 0; ci < TECH_CATEGORIES.length; ci++) {
@@ -1059,9 +1024,7 @@ var skillBarObs = new IntersectionObserver(function(entries) {
 }, { threshold: 0.2 });
 skillBarObs.observe(techWrap);
 
-/* ═══════════════════════════════════════
-   BUILD PROJECTS
-═══════════════════════════════════════ */
+   // BUILD PROJECTS
 var projGrid = document.getElementById('projGrid');
 
 function renderProjects(filter) {
@@ -1130,9 +1093,7 @@ document.getElementById('filterBar').addEventListener('click', function(e) {
   renderProjects(btn.getAttribute('data-f'));
 });
 
-/* ═══════════════════════════════════════
-   MODAL
-═══════════════════════════════════════ */
+   // MODAL
 function openModal(idx) {
   var p = PROJECTS[idx];
   var tagsHtml = '';
@@ -1163,9 +1124,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-/* ═══════════════════════════════════════
-   BUILD TIMELINE
-═══════════════════════════════════════ */
+   // BUILD TIMELINE
 var tlWrap = document.getElementById('tlWrap');
 for (var ei = 0; ei < EXPERIENCE.length; ei++) {
   var ex = EXPERIENCE[ei];
@@ -1183,9 +1142,7 @@ for (var ei = 0; ei < EXPERIENCE.length; ei++) {
   tlWrap.appendChild(item);
 }
 
-/* ═══════════════════════════════════════
-   TYPING ANIMATION
-═══════════════════════════════════════ */
+   // TYPING ANIMATION
 var ri = 0, ci = 0, deleting = false;
 function typeStep() {
   var el = document.getElementById('typed');
@@ -1210,9 +1167,7 @@ function typeStep() {
   setTimeout(typeStep, deleting ? 45 : 85);
 }
 
-/* ═══════════════════════════════════════
-   CURSOR
-═══════════════════════════════════════ */
+   // CURSOR
 var curEl  = document.getElementById('cur');
 var ringEl = document.getElementById('cur-ring');
 var mx = -100, my = -100, rx = -100, ry = -100;
@@ -1239,9 +1194,7 @@ document.addEventListener('mouseover', function(e) {
   requestAnimationFrame(animRing);
 })();
 
-/* ═══════════════════════════════════════
-   PARTICLES
-═══════════════════════════════════════ */
+   // PARTICLES
 var canvas = document.getElementById('particles');
 var ctx    = canvas.getContext('2d');
 var W, H;
@@ -1299,9 +1252,7 @@ for (var di = 0; di < 100; di++) dots.push(new Dot());
   requestAnimationFrame(animParticles);
 })();
 
-/* ═══════════════════════════════════════
-   NAVBAR — SCROLL + ACTIVE
-═══════════════════════════════════════ */
+   // NAVBAR — SCROLL + ACTIVE
 var navEl     = document.getElementById('nav');
 var navLinks  = document.querySelectorAll('.nav-links a');
 var sections  = document.querySelectorAll('section[id]');
@@ -1318,9 +1269,7 @@ window.addEventListener('scroll', function() {
   observeAll();
 }, { passive: true });
 
-/* ═══════════════════════════════════════
-   DARK / LIGHT THEME TOGGLE
-═══════════════════════════════════════ */
+   // DARK / LIGHT THEME TOGGLE
 var themeBtn = document.getElementById('themeBtn');
 var htmlEl   = document.documentElement;
 
@@ -1336,9 +1285,7 @@ themeBtn.addEventListener('click', function() {
   try { localStorage.setItem('theme', next); } catch(e) {}
 });
 
-/* ═══════════════════════════════════════
-   HAMBURGER
-═══════════════════════════════════════ */
+   // HAMBURGER
 var hbgBtn = document.getElementById('hbg');
 var mmenu  = document.getElementById('mmenu');
 hbgBtn.addEventListener('click', function() {
@@ -1353,9 +1300,7 @@ for (var ml = 0; ml < mlinks.length; ml++) {
   });
 }
 
-/* ═══════════════════════════════════════
-   CONTACT FORM
-═══════════════════════════════════════ */
+   // CONTACT FORM
 document.getElementById('cform').addEventListener('submit', function(e) {
   e.preventDefault();
   var ok   = document.getElementById('fsuccess');
@@ -1370,9 +1315,7 @@ document.getElementById('cform').addEventListener('submit', function(e) {
   }, 4000);
 });
 
-/* ═══════════════════════════════════════
-   LOADER → LAUNCH EVERYTHING
-═══════════════════════════════════════ */
+   // LOADER → LAUNCH EVERYTHING
 window.addEventListener('load', function() {
   setTimeout(function() {
     document.getElementById('loader').classList.add('gone');
